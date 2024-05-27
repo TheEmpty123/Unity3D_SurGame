@@ -360,13 +360,21 @@
 "Assets/Mini Simple Characters Skeleton Demo/Readme/Scripts/Readme.cs"
 "Assets/Script/AI_Movement.cs"
 "Assets/Script/DragDrop.cs"
+"Assets/Script/EndlessTerrain.cs"
+"Assets/Script/FalloffGenerator.cs"
+"Assets/Script/HideOnPlay.cs"
 "Assets/Script/InteractableObject.cs"
 "Assets/Script/InventorySystem.cs"
 "Assets/Script/ItemSlot.cs"
+"Assets/Script/MapDisplay.cs"
+"Assets/Script/MapGenerator.cs"
+"Assets/Script/MeshGenerator.cs"
 "Assets/Script/MouseMovement.cs"
+"Assets/Script/Noise.cs"
 "Assets/Script/ObjectDestroyer.cs"
 "Assets/Script/PlayerMovement.cs"
 "Assets/Script/SelectionManager.cs"
+"Assets/Script/TextureGenerator.cs"
 -langversion:9.0
 
 /deterministic

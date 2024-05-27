@@ -41,14 +41,14 @@ public class InventorySystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.I) && !isOpen)
+        if(Input.GetKeyDown(KeyCode.Tab) && !isOpen)
         {
             //Debug.Log("open inventory");
             inventoryScreenUI.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             isOpen = true;
         }
-        else if ((Input.GetKeyDown(KeyCode.I)|| Input.GetKeyDown(KeyCode.Escape)) && isOpen)
+        else if ((Input.GetKeyDown(KeyCode.Tab)|| Input.GetKeyDown(KeyCode.Escape)) && isOpen)
         {
             Cursor.lockState = CursorLockMode.Locked;
             inventoryScreenUI.SetActive(false);

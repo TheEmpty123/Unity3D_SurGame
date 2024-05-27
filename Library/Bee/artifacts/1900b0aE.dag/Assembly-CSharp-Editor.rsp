@@ -372,6 +372,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"D:/2022.3.16f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/2022.3.16f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Editor/MapGeneratorEditor.cs"
 "Assets/Mini Simple Characters Skeleton Demo/Readme/Scripts/Editor/ReadmeEditor.cs"
 -langversion:9.0
 

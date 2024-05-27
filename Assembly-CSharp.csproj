@@ -63,13 +63,21 @@
     <Compile Include="Assets\Script\DragDrop.cs" />
     <Compile Include="Assets\Script\InteractableObject.cs" />
     <Compile Include="Assets\Script\SelectionManager.cs" />
+    <Compile Include="Assets\Script\Noise.cs" />
     <Compile Include="Assets\Script\MouseMovement.cs" />
+    <Compile Include="Assets\Script\MapGenerator.cs" />
     <Compile Include="Assets\Script\InventorySystem.cs" />
+    <Compile Include="Assets\Script\MapDisplay.cs" />
     <Compile Include="Assets\Script\ObjectDestroyer.cs" />
+    <Compile Include="Assets\Script\FalloffGenerator.cs" />
     <Compile Include="Assets\Script\ItemSlot.cs" />
     <Compile Include="Assets\Script\AI_Movement.cs" />
+    <Compile Include="Assets\Script\MeshGenerator.cs" />
+    <Compile Include="Assets\Script\TextureGenerator.cs" />
     <Compile Include="Assets\Script\PlayerMovement.cs" />
+    <Compile Include="Assets\Script\HideOnPlay.cs" />
     <Compile Include="Assets\Mini Simple Characters Skeleton Demo\Readme\Scripts\Readme.cs" />
+    <Compile Include="Assets\Script\EndlessTerrain.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\BrokenVector\LowPolyTreePack\README.txt" />
