@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using static MapGenerator;
 
@@ -13,6 +14,7 @@ public class EndlessTerrain : MonoBehaviour
     public Transform viewer;
     public LODInfo[] detailLevel;
     public static float maxViewDst;
+    public GameObject ResourcesGenerator;
 
     public static Vector2 viewerPosition;
     Vector2 viewerOldPosition;
@@ -72,7 +74,7 @@ public class EndlessTerrain : MonoBehaviour
                 }
                 else
                 {
-                    terrainChunkDictionary.Add(viewedChunkCoord, new TerrainChunk(viewedChunkCoord, chunkSize, detailLevel, transform, material));
+                    terrainChunkDictionary.Add(viewedChunkCoord, new TerrainChunk(viewedChunkCoord, chunkSize, detailLevel, transform, material, ResourcesGenerator));
                 }
             }
         }
@@ -97,7 +99,7 @@ public class EndlessTerrain : MonoBehaviour
 
         int previousLODIndex = -1;
 
-        public TerrainChunk(Vector2 coord, int chunkSize, LODInfo[] detailLevels, Transform parent, Material material)
+        public TerrainChunk(Vector2 coord, int chunkSize, LODInfo[] detailLevels, Transform parent, Material material, GameObject ResourcesGenerator)
         {
             this.detailLevels = detailLevels;
 
@@ -106,6 +108,12 @@ public class EndlessTerrain : MonoBehaviour
             Vector3 positionV3 = new Vector3(position.x, 0, position.y);
 
             meshObject = new GameObject("Terrain Chunk");
+            GameObject obj = Object.Instantiate(ResourcesGenerator, meshObject.transform);
+/*
+            resourceObject = ResourcesGenerator;
+*/
+
+            meshObject.layer = LayerMask.NameToLayer("Terrain");
             meshRenderer = meshObject.AddComponent<MeshRenderer>();
             meshFilter = meshObject.AddComponent<MeshFilter>();
             meshCollider = meshObject.AddComponent<MeshCollider>();
@@ -114,6 +122,11 @@ public class EndlessTerrain : MonoBehaviour
             meshObject.transform.position = positionV3 * scale;
             meshObject.transform.SetParent(parent);
             meshObject.transform.localScale = Vector3.one * scale;
+
+
+            obj.transform.parent = meshObject.transform;
+
+
             setVisible(false);
 
             lodMeshes = new LODMesh[detailLevels.Length];

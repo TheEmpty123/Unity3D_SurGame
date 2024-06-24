@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjectDestroyer : MonoBehaviour
 {
-    public float interactionDistance = 5f; // Max distance for raycasting
+    public float interactionDistance = 10f; // Max distance for raycasting
 
     void Update()
     {

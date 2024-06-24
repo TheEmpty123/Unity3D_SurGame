@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -7,17 +5,31 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController characterController;
 
     public float speed = 12f;
+
     public float gravity = -9.81f * 5;
+
     public float jumpHeight = 3f;
 
     public Transform groundCheck;
+
     //public Transform moveCheck;
+
     public float groundDistance = 0.4f;
+
     public LayerMask groundLayerMask;
 
     Vector3 velocity;
 
     public bool isGrounded;
+
+    private float runSpeed = 50f;
+
+    public static PlayerMovement instance { get; private set; }
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Update()
@@ -28,6 +40,15 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
+        }
+
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = runSpeed;
+        }
+        else
+        {
+            speed = 12f;
         }
 
         float x = Input.GetAxis("Horizontal");
