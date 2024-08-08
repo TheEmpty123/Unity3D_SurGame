@@ -8,13 +8,10 @@ Unity3D_SurGame is an immersive survival game developed using Unity3D. The game 
 - **Crafting System**: Craft a variety of items, from basic tools to advanced equipment, to aid in your survival.
 - **AI Enemies**: Encounter and defend against AI-controlled enemies with varying levels of difficulty.
 - **Day-Night Cycle**: Adapt to the changing time of day, which impacts visibility and the behavior of wildlife and enemies.
-- **Immersive Graphics**: High-quality graphics and detailed environments enhance the immersive experience of the game.
 
 ### Technologies Used
 - **Unity3D**: The primary game engine used for development, offering powerful tools for 3D game creation.
 - **C#**: Programming language used for scripting game mechanics and functionality.
-- **Blender**: Utilized for creating 3D models and animations.
-- **Photoshop**: Used for creating textures and graphical assets.
 - **Visual Studio**: Integrated development environment (IDE) for coding and debugging.
 
 ### Installation Instructions
@@ -36,7 +33,6 @@ Unity3D_SurGame is an immersive survival game developed using Unity3D. The game 
 - **Advanced AI**: Enhancing enemy AI for more challenging and unpredictable encounters.
 - **Expanded Crafting System**: Adding more items and recipes to the crafting system for greater gameplay depth.
 - **Story Mode**: Introducing a storyline with missions and objectives to provide a structured gameplay experience.
-- **VR Support**: Adding virtual reality support for an even more immersive experience.
 
 ### Conclusion
 Unity3D_SurGame aims to provide an engaging and challenging survival experience with its detailed environment, strategic resource management, and immersive gameplay mechanics. This project showcases the capabilities of Unity3D and the creative potential of combining various technologies to create a compelling game.
