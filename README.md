@@ -6,7 +6,6 @@ Unity3D_SurGame is an immersive survival game developed using Unity3D. The game 
 - **Open World Exploration**: Navigate through a vast and detailed environment, discovering new areas and hidden resources.
 - **Resource Management**: Collect resources like food, water, and materials to survive and build essential tools and shelter.
 - **Crafting System**: Craft a variety of items, from basic tools to advanced equipment, to aid in your survival.
-- **Dynamic Weather System**: Experience changing weather conditions that affect gameplay and survival strategies.
 - **AI Enemies**: Encounter and defend against AI-controlled enemies with varying levels of difficulty.
 - **Day-Night Cycle**: Adapt to the changing time of day, which impacts visibility and the behavior of wildlife and enemies.
 - **Immersive Graphics**: High-quality graphics and detailed environments enhance the immersive experience of the game.
